@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "songconvert"
+version = "0.1.0"
+description = ""
+authors = [
+    "randompersona1 <74961116+randompersona1@users.noreply.github.com>"
+]
+readme = "README.md"
+packages = [{include = "songconvert", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ultrastarparser = "^0.6.13"
+demucs = "^4.0.1"
+numpy = "^1.24.1"
+torch = { url = "https://download.pytorch.org/whl/cu121/torch-2.1.2%2Bcu121-cp311-cp311-win_amd64.whl"}
+torchaudio = { url = "https://download.pytorch.org/whl/cu121/torchaudio-2.1.2%2Bcu121-cp311-cp311-win_amd64.whl"}
+torchvision = { url = "https://download.pytorch.org/whl/cu121/torchvision-0.16.2%2Bcu121-cp311-cp311-win_amd64.whl"}
+python-ffmpeg = "^2.0.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
